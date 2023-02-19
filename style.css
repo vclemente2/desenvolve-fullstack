@@ -79,18 +79,17 @@ header {
 
 /* Main --------- */
 
-.container-cursos {
-    width: 1280px;
-    margin: 0 auto;
-    padding-bottom: 8rem;
+main {
+    display: flex;
 }
 
-.container-cursos-lista {
+.container-cursos {
+    width: 1280px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     margin: 0 auto;
     gap: 3%;
+    padding-bottom: 8rem;
 }
 
 .container-cursos-lista-item {
@@ -135,6 +134,7 @@ header {
 /* Footer --------- */
 
 footer {
+    display: flex;
     background: var(--branco-total);
 }
 
@@ -180,4 +180,73 @@ footer {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width:1220px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-cursos-lista-item {
+        width: 48.5%;
+    }
+
+    .container-logo-alura-boticario {
+        gap: 1rem;
+    }
+
+    .container-links-redes_sociais {
+        gap: 1rem;
+    }
+
+    .lista-redes_sociais {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 16px
+    }
+
+    .header-logo {
+        width: 20%;
+    }
+
+    .label-pesquisa {
+        padding: 0;
+        gap: 0;
+        flex-shrink: 1;
+        width: 20%;
+    }
+
+    .input-pesquisa::placeholder {
+        color: transparent;
+    }
+
+    .container-cursos-lista-item {
+        width: 100%;
+        margin: 2rem 2rem 0;
+    }
+
+    .container-logo-alura-boticario {
+        flex-direction: column;
+    }
+
+    .container-links-redes_sociais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-desenvolve {
+        display: none;
+    }
+
 }
