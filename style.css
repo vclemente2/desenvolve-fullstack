@@ -1,3 +1,18 @@
+/* Variáveis */
+:root {
+    --branco-total: #FFFFFF;
+    --branco-semi: #F5F5F5;
+
+    --azul-forte: #0000EE;
+    --azul-menos-forte: #264FEC;
+
+    --azulado: #33475B;
+    --azulado-forte: #364372;
+
+    --rosa-forte: #DB1E8C;
+    --rosa-fraco: #FF97D3;
+}
+
 /* Importação de fonte via Google Fonts --------- */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
@@ -10,14 +25,14 @@
 
 /* Body --------- */
 body {
-    background-color: #33475B;
+    background-color: var(--azulado);
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* Header --------- */
 header {
     height: 80px;
-    background-color: #FFFFFF;
+    background-color: var(--branco-total);
     display: flex;
 }
 
@@ -29,14 +44,19 @@ header {
     justify-content: space-between;
 }
 
+.header-logo {
+    width: 218px;
+    text-align: left;
+}
+
 .titulo-principal {
     font-size: 24px;
-    color: #0000EE;
+    color: var(--azul-forte);
     font-weight: 400;
 }
 
 .label-pesquisa {
-    background-color: #DB1E8C;
+    background-color: var(--rosa-forte);
     height: 40px;
     padding: 8px;
     display: flex;
@@ -52,5 +72,59 @@ header {
 }
 
 ::placeholder {
-    color: #FF97D3;
+    color: var(--rosa-fraco);
+}
+
+/* Main */
+
+.container-cursos {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.container-cursos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    gap: 3%;
+}
+
+.titulo-item-lista {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azulado-forte);
+}
+
+.container-cursos-lista-item {
+    width: 31.33%;
+    height: 445px;
+    background: var(--branco-semi);
+    list-style-type: none;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.texto-item-lista {
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.container-cursos-lista-item .texto-item-lista:last-of-type {
+    flex-grow: 1;
+}
+
+.link-item-lista {
+    font-size: 0.87rem;
+    border: 1px solid var(--azul-menos-forte);
+    border-radius: 4px;
+    padding: 1rem;
+    color: var(--azul-menos-forte);
+    text-decoration: none;
+    width: fit-content;
 }
