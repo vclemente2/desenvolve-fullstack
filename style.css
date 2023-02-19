@@ -11,6 +11,8 @@
 
     --rosa-forte: #DB1E8C;
     --rosa-fraco: #FF97D3;
+
+    --preto: #000000;
 }
 
 /* Importação de fonte via Google Fonts --------- */
@@ -75,11 +77,12 @@ header {
     color: var(--rosa-fraco);
 }
 
-/* Main */
+/* Main --------- */
 
 .container-cursos {
     width: 1280px;
     margin: 0 auto;
+    padding-bottom: 8rem;
 }
 
 .container-cursos-lista {
@@ -88,12 +91,6 @@ header {
     width: 100%;
     margin: 0 auto;
     gap: 3%;
-}
-
-.titulo-item-lista {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--azulado-forte);
 }
 
 .container-cursos-lista-item {
@@ -108,6 +105,12 @@ header {
     flex-direction: column;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+.titulo-item-lista {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azulado-forte);
 }
 
 .texto-item-lista {
@@ -127,4 +130,54 @@ header {
     color: var(--azul-menos-forte);
     text-decoration: none;
     width: fit-content;
+}
+
+/* Footer --------- */
+
+footer {
+    background: var(--branco-total);
+}
+
+.container-rodape {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.container-logo-alura-boticario {
+    display: flex;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.container-links-redes_sociais {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.lista-links {
+    list-style-type: none;
+}
+
+.lista-links-link {
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.label-lista-redes-sociais {
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.lista-redes_sociais {
+    gap: 1rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
 }
