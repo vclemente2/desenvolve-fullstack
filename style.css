@@ -213,18 +213,33 @@ footer {
 
 @media screen and (max-width: 767px) {
     html {
-        font-size: 16px
+        font-size: 16px;
+    }
+
+    header {
+        height: auto;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .container-elementos-header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .header-logo {
-        width: 20%;
+        text-align: center;
+    }
+
+    .header-logo {
+        width: 100vw;
     }
 
     .label-pesquisa {
         padding: 0;
         gap: 0;
         flex-shrink: 1;
-        width: 20%;
+        width: auto;
     }
 
     .input-pesquisa::placeholder {
@@ -233,11 +248,16 @@ footer {
 
     .container-cursos-lista-item {
         width: 100%;
-        margin: 2rem 2rem 0;
+        height: auto;
+        margin: 2rem 1rem 0;
     }
 
-    .container-logo-alura-boticario {
+
+    .container-rodape {
+        align-items: center;
+        text-align: center;
         flex-direction: column;
+        gap: 1rem;
     }
 
     .container-links-redes_sociais {
